@@ -1,0 +1,13 @@
+{
+    "name": "enigma/tek-auto",
+    "autoload": {
+        "psr-4": {
+            "Router\\": "routes/",
+            "App\\": "app/",
+            "Database\\": "database/"
+        }
+    },
+    "require": {
+      "ext-pdo": "*"
+    }
+}
