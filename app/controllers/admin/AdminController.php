@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Controllers\Admin;
+namespace App\controllers\admin;
 
-use App\Controllers\Controller;
+
+use App\controllers\Controller;
 
 class AdminController extends Controller
 {
@@ -10,5 +11,30 @@ class AdminController extends Controller
         //$this->requireAdmin();
 
         return $this->view('admin.dashboard');
+    }
+
+    public  function bills()
+    {
+        //$this->requireAdmin();
+
+
+        return $this->view('admin.bills.index');
+    }
+
+    public  function bookings()
+    {
+        //$this->requireAdmin();
+
+
+        return $this->view('admin.bookings.index');
+    }
+
+
+    public  function users()
+    {
+        //$this->requireAdmin();
+
+
+        return $this->view('admin.users.index');
     }
 }

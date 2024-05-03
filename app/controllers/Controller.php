@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\controllers;
 
 use Database\DBconnect;
 
@@ -15,16 +15,18 @@ abstract class Controller
         $this->db = $db;
     }
 
-    protected function view(string $path, array $params = []){
+    protected function view(string $path, array $params = null){
+        //$cars = $params['cars'];
         ob_start();
         $path = str_replace('.', DIRECTORY_SEPARATOR, $path);
-        require VIEWS . $path .'.php';
+        include VIEWS . $path .'.php';
         $content = ob_get_clean();
-        require VIEWS . 'layout.php';
+//        var_dump($params['car']);
+        include VIEWS . 'layout.php';
     }
 
     protected function getDB(){
-        require $this->db;
+        return $this->db;
     }
 
     protected function checkRole(): ?string
