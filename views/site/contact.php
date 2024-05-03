@@ -7,7 +7,7 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 
-<div class="hero inner-page" style="background-image: url('<?=SCRIPTS ?>/images/hero_1_a.jpg');">
+<div class="hero inner-page" style="background-image: url('<?=SCRIPTS ?>/frontend/images/hero_1_a.jpg');">
     <div class="container">
         <div class="row align-items-end ">
             <div class="col-lg-5">

@@ -74,18 +74,18 @@
     </div>
 </footer>
 </div>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'jquery-3.3.1.min.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'popper.min.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'bootstrap.min.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'owl.carousel.min.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'jquery.sticky.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'jquery.waypoints.min.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'jquery.animateNumber.min.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'jquery.fancybox.min.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'jquery.easing.1.3.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'bootstrap-datepicker.min.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'aos.js'?>"></script>
-<script src="<?= SCRIPTS . 'js' . DIRECTORY_SEPARATOR . 'main.js'?>"></script>
+<script src="<?= SCRIPTS . 'frontend' . DIRECTORY_SEPARATOR . 'js' . DIRECTORY_SEPARATOR . 'jquery-3.3.1.min.js'?>"></script>
+<script src="<?= SCRIPTS . 'frontend' . DIRECTORY_SEPARATOR . 'js' . DIRECTORY_SEPARATOR . 'popper.min.js'?>"></script>
+<script src="<?= SCRIPTS . 'frontend' . DIRECTORY_SEPARATOR . 'js' . DIRECTORY_SEPARATOR . 'bootstrap.min.js'?>"></script>
+<script src="<?= SCRIPTS .'frontend' . DIRECTORY_SEPARATOR .  'js' . DIRECTORY_SEPARATOR . 'owl.carousel.min.js'?>"></script>
+<script src="<?= SCRIPTS .'frontend' . DIRECTORY_SEPARATOR .  'js' . DIRECTORY_SEPARATOR . 'jquery.sticky.js'?>"></script>
+<script src="<?= SCRIPTS .'frontend' . DIRECTORY_SEPARATOR .  'js' . DIRECTORY_SEPARATOR . 'jquery.waypoints.min.js'?>"></script>
+<script src="<?= SCRIPTS .'frontend' . DIRECTORY_SEPARATOR .  'js' . DIRECTORY_SEPARATOR . 'jquery.animateNumber.min.js'?>"></script>
+<script src="<?= SCRIPTS .'frontend' . DIRECTORY_SEPARATOR .  'js' . DIRECTORY_SEPARATOR . 'jquery.fancybox.min.js'?>"></script>
+<script src="<?= SCRIPTS .'frontend' . DIRECTORY_SEPARATOR .  'js' . DIRECTORY_SEPARATOR . 'jquery.easing.1.3.js'?>"></script>
+<script src="<?= SCRIPTS .'frontend' . DIRECTORY_SEPARATOR .  'js' . DIRECTORY_SEPARATOR . 'bootstrap-datepicker.min.js'?>"></script>
+<script src="<?= SCRIPTS .'frontend' . DIRECTORY_SEPARATOR .  'js' . DIRECTORY_SEPARATOR . 'aos.js'?>"></script>
+<script src="<?= SCRIPTS .'frontend' . DIRECTORY_SEPARATOR .  'js' . DIRECTORY_SEPARATOR . 'main.js'?>"></script>
 
 
 

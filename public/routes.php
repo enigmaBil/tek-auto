@@ -32,7 +32,9 @@ $router->get('/admin/dashboard/cars/delete/:id', 'App\Controllers\Admin\CarContr
 
 $router->get('/admin/dashboard/bookings', 'App\Controllers\Admin\AdminController@bookings');
 $router->get('/admin/dashboard/bills', 'App\Controllers\Admin\AdminController@bills');
-$router->get('/admin/dashboard/users', 'App\Controllers\Admin\AdminController@users');
+
+$router->get('/admin/dashboard/users', 'App\Controllers\Admin\UserController@index');
+$router->get('/admin/dashboard/users/create', 'App\controllers\admin\UserController@create');
 
 
 

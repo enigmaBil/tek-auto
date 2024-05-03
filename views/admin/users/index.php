@@ -15,7 +15,11 @@ require_once __DIR__ . '/../includes/navbar.php';
         <div class="card pd-20 pd-sm-40 mg-t-50">
             <h6 class="card-body-title">Gestion des utilisateurs</h6>
             <p class="mg-b-20 mg-sm-b-30">Liste des utilisateurs.</p>
-
+            <div class="row row-sm ">
+                <div class="col-xl-2">
+                    <a href="/admin/dashboard/users/create" class="btn btn-primary btn-block mg-b-10"><i class="fa fa-plus-square mg-r-10"></i>Ajouter</a>
+                </div>
+            </div>
             <div class="table-responsive">
                 <table class="table table-hover table-bordered mg-b-0">
                     <thead class="bg-info">

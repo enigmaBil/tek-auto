@@ -30,11 +30,5 @@ class AdminController extends Controller
     }
 
 
-    public  function users()
-    {
-        //$this->requireAdmin();
 
-
-        return $this->view('admin.users.index');
-    }
 }

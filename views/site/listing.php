@@ -7,7 +7,7 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 
-<div class="hero inner-page" style="background-image: url('<?= SCRIPTS ?>/images/hero_1_a.jpg');">
+<div class="hero inner-page" style="background-image: url('<?= SCRIPTS ?>/frontend/images/hero_1_a.jpg');">
     <div class="container">
         <div class="row align-items-end ">
             <div class="col-lg-5">
@@ -33,7 +33,7 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="listing d-block  align-items-stretch">
                     <div class="listing-img h-100 mr-4">
-                        <img src="<?= SCRIPTS ?>/images/car_6.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SCRIPTS ?>/frontend/images/car_6.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="listing-contents h-100">
                         <h3>Mitsubishi Pajero</h3>
@@ -64,7 +64,7 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="listing d-block  align-items-stretch">
                     <div class="listing-img h-100 mr-4">
-                        <img src="<?= SCRIPTS ?>/images/car_5.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SCRIPTS ?>/frontend/images/car_5.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="listing-contents h-100">
                         <h3>Nissan Moco</h3>
@@ -95,7 +95,7 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="listing d-block  align-items-stretch">
                     <div class="listing-img h-100 mr-4">
-                        <img src="<?= SCRIPTS ?>/images/car_4.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SCRIPTS ?>/frontend/images/car_4.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="listing-contents h-100">
                         <h3>Honda Fitta</h3>
@@ -126,7 +126,7 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="listing d-block  align-items-stretch">
                     <div class="listing-img h-100 mr-4">
-                        <img src="<?= SCRIPTS ?>/images/car_3.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SCRIPTS ?>/frontend/images/car_3.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="listing-contents h-100">
                         <h3>Skoda Laura</h3>
@@ -157,7 +157,7 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="listing d-block  align-items-stretch">
                     <div class="listing-img h-100 mr-4">
-                        <img src="<?= SCRIPTS ?>/images/car_2.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SCRIPTS ?>/frontend/images/car_2.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="listing-contents h-100">
                         <h3>Mazda LaPuta</h3>
@@ -188,7 +188,7 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="listing d-block  align-items-stretch">
                     <div class="listing-img h-100 mr-4">
-                        <img src="<?= SCRIPTS ?>/images/car_1.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SCRIPTS ?>/frontend/images/car_1.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="listing-contents h-100">
                         <h3>Buick LaCrosse</h3>
