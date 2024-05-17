@@ -60,7 +60,11 @@ require_once __DIR__ . '/../includes/navbar.php';
                                     <div class="d-flex justify-content-center align-items-center">
                                         <a href="/admin/dashboard/cars/edit/<?= $car->id ?>" title="Mettre a jour"><i class="menu-item-icon fa fa-pencil tx-2 tx-dark"></i></a>
                                         <a href="/admin/dashboard/cars/show/<?= $car->id ?>" title="Voir les details"><i class="menu-item-icon fa fa-eye tx-2 tx-gray-900"></i></a>
-                                        <a href="/admin/dashboard/cars/delete/<?= $car->id ?>" title="Supprimer"><i class="menu-item-icon fa fa-trash tx-2 tx-danger"></i></a>
+                                        <form class="d-inline" action="/admin/dashboard/cars/delete/<?= $car->id ?>" method="POST">
+                                            <button title="Supprimer"  type="submit" style="border: none; background: transparent; outline: none; cursor: pointer">
+                                                <i class="menu-item-icon fa fa-trash tx-2 tx-danger"></i>
+                                            </button>
+                                        </form>
                                     </div>
                                 </td>
                             </tr>

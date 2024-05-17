@@ -15,12 +15,12 @@ require_once __DIR__ . '/../includes/navbar.php';
             <a class="breadcrumb-item" href="/admin/dashboard/cars">Gestion des voitures</a>
             <span class="breadcrumb-item active">Detail de la voiture</span>
         </nav>
-    <div class="sl-pagebody">
+        <div class="sl-pagebody">
 
-        <div class="card pd-20 pd-sm-40 mg-t-50">
-            <h6 class="card-body-title">Gestion des voitures</h6>
-            <p class="mg-b-20 mg-sm-b-30">Fiche descriptive de la  <?= $params['car']->modele ?>.</p>
-            <div class="row row-sm ">
+            <div class="card pd-20 pd-sm-40 mg-t-50">
+                <h6 class="card-body-title">Gestion des voitures</h6>
+                <p class="mg-b-20 mg-sm-b-30">Fiche descriptive de la  <?= $params['car']->modele ?>.</p>
+                <div class="row row-sm ">
                 <div class="col-lg-4">
                     <div class="form-group">
                         <img src="<?= SCRIPTS ?>/<?= $params['car']->photo ?>" class="img-thumbnail" alt="Photo actuelle">
@@ -69,7 +69,7 @@ require_once __DIR__ . '/../includes/navbar.php';
 
 
         </div>
-    </div>
+        </div>
 
 
 <?php

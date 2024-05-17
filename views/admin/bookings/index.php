@@ -17,6 +17,7 @@ require_once __DIR__ . '/../includes/navbar.php';
             <p class="mg-b-20 mg-sm-b-30">Liste des réservations.</p>
 
             <div class="table-responsive">
+                <?php if (isset($params['books']) && !empty($params['books'])): ?>
                 <table class="table table-hover table-bordered mg-b-0">
                     <thead class="bg-info">
                     <tr>
@@ -53,6 +54,9 @@ require_once __DIR__ . '/../includes/navbar.php';
                             <a href="" title="Supprimer"><i class="menu-item-icon fa fa-trash tx-2 tx-danger"></i></a>
                         </td>
                     </tr>
+                    <?php else: ?>
+                        <p class="text-primary">Aucune Reservation Effectuee pour le moment</p>
+                    <?php endif ?>
                     </tbody>
                 </table>
             </div><!-- table-responsive -->

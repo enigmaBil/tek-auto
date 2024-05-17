@@ -21,6 +21,7 @@ require_once __DIR__ . '/../includes/navbar.php';
                 </div>
             </div>
             <div class="table-responsive">
+                <?php if (isset($params['users']) && !empty($params['users'])): ?>
                 <table class="table table-hover table-bordered mg-b-0">
                     <thead class="bg-info">
                     <tr>
@@ -33,30 +34,35 @@ require_once __DIR__ . '/../includes/navbar.php';
                     </tr>
                     </thead>
                     <tbody>
+                    <?php  foreach ($params['users'] as $user): ?>
                     <tr>
-                        <td>Bmw</td>
-                        <td>coupe</td>
-                        <td>hgrt-64</td>
-                        <td>belle voiture</td>
-                        <td><img src="<?= SCRIPTS ?>/pictures/cars/car_1.jpg" class="wd-xs-40 rounded-circle" alt=""></td>
+                        <td><?=$user->nom ?></td>
+                        <td><?=$user->prenom ?></td>
+                        <td><?=$user->email ?></td>
                         <td>
-                            <a href="" title="Mettre a jour"><i class="menu-item-icon fa fa-pencil tx-2 tx-dark"></i></a>
-                            <a href="" title="Voir les details"><i class="menu-item-icon fa fa-eye tx-2 tx-gray-900"></i></a>
-                            <a href="" title="Supprimer"><i class="menu-item-icon fa fa-trash tx-2 tx-danger"></i></a>
+                            <?php if ($user->code_client !== null): ?>
+                                <?= $user->code_client ?>
+                            <?php else: ?>
+                                <span class="text-center">Non defini</span>
+                            <?php endif ?>
+                        </td>
+                        <td><img src="<?= SCRIPTS ?>/<?=$user->photo ?>" class="wd-xs-40 rounded-circle" alt=""></td>
+                        <td>
+                            <?php if ($user->code_client === null): ?>
+                                <a href="/admin/dashboard/users/edit/<?= $user->id ?>" title="Mettre à jour"><i class="menu-item-icon fa fa-pencil tx-2 tx-dark"></i></a>
+                            <?php endif ?>
+                            <a href="/admin/dashboard/users/show/<?= $user->id ?>" title="Voir les details"><i class="menu-item-icon fa fa-eye tx-2 tx-gray-900"></i></a>
+                            <form class="d-inline" action="/admin/dashboard/users/delete/<?= $user->id ?>" method="POST">
+                                <button title="Supprimer" type="submit" style="border: none; background: transparent; outline: none; cursor: pointer">
+                                    <i class="menu-item-icon fa fa-trash tx-2 tx-danger"></i>
+                                </button>
+                            </form>
                         </td>
                     </tr>
-                    <tr>
-                        <td>Bmw</td>
-                        <td>coupe</td>
-                        <td>hgrt-64</td>
-                        <td>belle voiture</td>
-                        <td><img src="<?= SCRIPTS ?>/pictures/cars/car_1.jpg" class="wd-xs-40 rounded-circle" alt=""></td>
-                        <td>
-                            <a href="" title="Mettre a jour"><i class="menu-item-icon fa fa-pencil tx-2 tx-dark"></i></a>
-                            <a href="" title="Voir les details"><i class="menu-item-icon fa fa-eye tx-2 tx-gray-900"></i></a>
-                            <a href="" title="Supprimer"><i class="menu-item-icon fa fa-trash tx-2 tx-danger"></i></a>
-                        </td>
-                    </tr>
+                    <?php endforeach ?>
+                    <?php else: ?>
+                        <p>Aucun utilisateur n'est disponible actuellement</p>
+                    <?php endif ?>
                     </tbody>
                 </table>
             </div><!-- table-responsive -->

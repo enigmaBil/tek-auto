@@ -55,7 +55,7 @@ abstract class Controller
     protected function requireAdmin(): void
     {
         if (!$this->isAdmin()) {
-            header('Location: /access-denied');
+            header('Location: /admin/dashboard/access-denied');
             exit();
         }
     }
@@ -63,7 +63,7 @@ abstract class Controller
     protected function requireManager(): void
     {
         if (!$this->isManager()) {
-            header('Location: /access-denied');
+            header('Location: /admin/dashboard/access-denied');
             exit();
         }
     }
@@ -71,7 +71,7 @@ abstract class Controller
     protected function requireClient(): void
     {
         if (!$this->isClient()) {
-            header('Location: /access-denied');
+            header('Location: /login');
             exit();
         }
     }

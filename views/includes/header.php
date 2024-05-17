@@ -24,8 +24,9 @@
                             <li><a href="/listing" class="nav-link">Listing</a></li>
 <!--                            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>-->
 <!--                            <li><a href="blog.html" class="nav-link">Blog</a></li>-->
-<!--                            <li><a href="about.html" class="nav-link">About</a></li>-->
-                            <li><a href="/contact" class="nav-link">Contact</a></li>
+
+<!--                            <li><a href="/contact" class="nav-link">Contact</a></li>-->
+                            <li class="btn-primary " style="border-radius: 3px; "><a style="color: #fff !important; padding: 3px;"  href="/login" >Login</a></li>
                         </ul>
                     </nav>
                 </div>

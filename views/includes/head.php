@@ -5,7 +5,7 @@
     <title>Tek-auto</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="<?= SCRIPTS . 'frontend' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR .  'fonts.googleapis.com' . DIRECTORY_SEPARATOR . 'css26f1a.css?family=Roboto:wght@400;700;900&amp;display=swap' ?>" rel="stylesheet">
+    <link href="<?= SCRIPTS  . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'frontend' . DIRECTORY_SEPARATOR.  'fonts.googleapis.com' . DIRECTORY_SEPARATOR . 'css26f1a.css?family=Roboto:wght@400;700;900&amp;display=swap' ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?= SCRIPTS . 'frontend' . DIRECTORY_SEPARATOR . 'fonts' . DIRECTORY_SEPARATOR . 'icomoon' . DIRECTORY_SEPARATOR . 'style.css' ?>">
     <link rel="stylesheet" href="<?= SCRIPTS . 'frontend' . DIRECTORY_SEPARATOR . 'css' . DIRECTORY_SEPARATOR . 'bootstrap.min.css' ?>">
     <link rel="stylesheet" href="<?= SCRIPTS . 'frontend' . DIRECTORY_SEPARATOR . 'css' . DIRECTORY_SEPARATOR . 'bootstrap-datepicker.css' ?>">

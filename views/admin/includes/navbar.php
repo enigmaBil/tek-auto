@@ -1,4 +1,9 @@
+<?php
+    $user_name = $_SESSION['user_name'] ?? '';
+    $photo = $_SESSION['photo'];
+    $user_firstname = $_SESSION['user_firstname'] ?? '';
 
+?>
 
 
 
@@ -12,8 +17,10 @@
         <nav class="nav">
             <div class="dropdown">
                 <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
-                    <span class="logged-name">Bienvenue<span class="hidden-md-down"> Admin</span></span>
-                    <img src="<?= SCRIPTS ?>/backend/img/img3.jpg" class="wd-32 rounded-circle" alt="">
+                    <span class="logged-name">Bienvenue<span class="hidden-md-down">
+                            <?= (isset($user_name)&&isset($user_firstname)) ? $user_firstname.' '. $user_name : 'Admin' ?>
+                        </span></span>
+                    <img src="<?= SCRIPTS ?><?= (isset($photo)) ? $photo : '/backend/img/img3.jpg' ?>" class="wd-32 rounded-circle" alt="">
                 </a>
                 <div class="dropdown-menu dropdown-menu-header wd-200">
                     <ul class="list-unstyled user-profile-nav">

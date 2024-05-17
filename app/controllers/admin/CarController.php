@@ -10,7 +10,7 @@ class CarController extends Controller
 {
     public  function index()
     {
-        //$this->requireAdmin();
+//        $this->requireAdmin();
 
         $cars = (new Car($this->getDB()))->all();
 
@@ -21,16 +21,16 @@ class CarController extends Controller
 
     public function create()
     {
-        //$this->requireAdmin();
+//        $this->requireAdmin();
 
         return $this->view('admin.cars.create');
     }
 
     public function store()
     {
-        //$this->requireAdmin();
+//        $this->requireAdmin();
 
-        $car = new  Car($this->db);
+        $car = new  Car($this->getDB());
 
         // Traitement de l'image téléchargée
         $photoPath = $this->handleUploadedPhoto();
@@ -83,7 +83,7 @@ class CarController extends Controller
 
     public function edit(int $id)
     {
-        //$this->requireAdmin();
+//        $this->requireAdmin();
 
         $car = (new Car($this->getDB()))->findById($id);
 
@@ -93,7 +93,7 @@ class CarController extends Controller
     }
 
     public function update(int $id){
-        //$this->requireAdmin();
+//        $this->requireAdmin();
 
         $car = new Car($this->getDB());
 
@@ -121,7 +121,7 @@ class CarController extends Controller
     }
 
     public function show(int $id){
-        //$this->requireAdmin();
+//        $this->requireAdmin();
 
         $car = (new Car($this->getDB()))->findById($id);
 //        var_dump($car);die();
@@ -130,13 +130,15 @@ class CarController extends Controller
     }
 
     public function destroy(int $id){
-        //$this->requireAdmin();
+//        $this->requireAdmin();
 
         $car = (new Car($this->getDB()))->findById($id);
 
         $result = $car->destroy($id);
 
         if ($result){
+            return header('Location: /admin/dashboard/cars');
+        }else{
             return header('Location: /admin/dashboard/cars');
         }
     }

@@ -17,4 +17,14 @@ class SiteController extends Controller
     public function listing(){
         return $this->view('site.listing');
     }
+
+    public function login(){
+        return $this->view('site.auth.login');
+    }
+
+    public function register(){
+
+        return $this->view('site.auth.register');
+    }
+
 }
